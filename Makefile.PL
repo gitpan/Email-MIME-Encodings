@@ -4,5 +4,8 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'Email::MIME::Encodings',
     'VERSION_FROM'	=> 'Encodings.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
+               PREREQ_PM     => {
+                                 'MIME::Base64' => '3.01',
+                                 'MIME::QuotedPrint' => '3.01',
+                                },
 );

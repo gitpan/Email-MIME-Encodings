@@ -3,7 +3,7 @@ use strict;
 no strict 'refs';
 use warnings;
 
-$Email::MIME::Encodings::VERSION = "1.1";
+$Email::MIME::Encodings::VERSION = "1.2";
 
 use MIME::Base64;
 use MIME::QuotedPrint;
@@ -72,6 +72,8 @@ it too.
 C<MIME::Base64>, C<MIME::QuotedPrint>, C<Email::MIME>.
 
 =head1 COPYRIGHT AND LICENSE
+
+Copyright 2004, Casey West F<<casey@geeknest.com>>.
 
 Copyright 2003 by Simon Cozens
 
