@@ -3,7 +3,7 @@ use strict;
 no strict 'refs';
 use warnings;
 
-$Email::MIME::Encodings::VERSION = "1.0";
+$Email::MIME::Encodings::VERSION = "1.1";
 
 use MIME::Base64;
 use MIME::QuotedPrint;
@@ -17,7 +17,7 @@ for (qw(7bit 8bit binary)) {
 sub codec {
     my ($which, $how, $what) = @_;
     $how = lc $how;
-    $how = "qp" if $how eq "quotedprint";
+    $how = "qp" if $how eq "quotedprint" or $how eq "quoted-printable";
     my $sub = $which."_".$how;
     if (not defined &$sub) {
         require Carp;
