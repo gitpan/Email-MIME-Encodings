@@ -5,7 +5,7 @@ WriteMakefile(
     'NAME'		=> 'Email::MIME::Encodings',
     'VERSION_FROM'	=> 'Encodings.pm', # finds $VERSION
                PREREQ_PM     => {
-                                 'MIME::Base64' => '3.01',
-                                 'MIME::QuotedPrint' => '3.01',
+                                 'MIME::Base64' => '3.05',
+                                 'MIME::QuotedPrint' => '3.03',
                                 },
 );

@@ -7,7 +7,7 @@ for (qw(binary 7bit 8bit)) {
     is(Email::MIME::Encodings::decode($_, $x), $x, "dec $_");
 }
 
-$y= "This is a test\nof various MIME=3Dstuff.";
+$y= "This is a test\nof various MIME=3Dstuff.=\n";
 is(Email::MIME::Encodings::encode(quotedprint => $x), $y, "enc qp");
 is(Email::MIME::Encodings::decode(quotedprint => $y), $x, "dec qp");
 
